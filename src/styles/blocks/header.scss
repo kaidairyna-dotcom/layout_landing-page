@@ -1,0 +1,24 @@
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(images/Cover_photo_mobile.png);
+  background-size: cover;
+  background-position: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__title {
+  color: #fff;
+  line-height: 100%;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+.header__bottom {
+  padding: 0 20px 88px;
+}
