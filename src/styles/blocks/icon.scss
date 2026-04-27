@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .icon {
   display: block;
   width: 24px;
@@ -5,6 +7,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  @include on-tablet {
+    width: 32px;
+    height: 32px;
+  }
 
   &--phone {
     background-image: url(images/Icon_Phone.png);

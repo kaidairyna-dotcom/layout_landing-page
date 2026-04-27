@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .header {
   box-sizing: border-box;
   height: 100vh;
@@ -19,6 +21,8 @@
   }
 
   &__bottom {
-    padding: 0 20px 88px;
+    padding-bottom:  88px;
+
+    @include content-padding-inline;
   }
 }
