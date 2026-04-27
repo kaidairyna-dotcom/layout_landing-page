@@ -1,22 +1,18 @@
-.top-bar__logo {
-  height: 38px;
-  width: 130px;
-}
-
-.logologologo {
-  height: 100%;
-  width: 100%;
-}
-
 .top-bar {
   padding: 24px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+  &__logo {
+    height: 38px;
+    width: 130px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
-
-.top-bar__icons {
-  display: flex;
-  gap: 24px;
-}
-

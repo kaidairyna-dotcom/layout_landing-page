@@ -5,16 +5,16 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
 
-.icon--phone {
-  background-image: url(images/Icon_Phone.png);
-}
+  &--phone {
+    background-image: url(images/Icon_Phone.png);
+  }
 
-.icon--menu {
-  background-image: url(images/Icon_Burger.png);
-}
+  &--menu {
+    background-image: url(images/Icon_Burger.png);
+  }
 
-.icon--close {
-  background-image: url(images/Icon-Close.png);
+  &--close {
+    background-image: url(images/Icon-Close.png);
+  }
 }
