@@ -10,7 +10,7 @@
     }
 
     @include on-desktop {
-      grid-template-columns: 672px 324px;
+      grid-template-columns: 4fr 2fr;
       column-gap: 24px;
     }
   }
