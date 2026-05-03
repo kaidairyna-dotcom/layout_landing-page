@@ -1,6 +1,6 @@
 .header {
   background-image: url(../images/header-bg.png);
-  background-position: right;
+  background-position: center;
   background-size: cover;
 
   &__content {
@@ -10,7 +10,7 @@
     height: 100vh;
 
     @include on-desktop {
-      height: 711px;
+      height: 100vh;
       justify-content: flex-start;
     }
   }

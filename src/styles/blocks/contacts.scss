@@ -35,6 +35,8 @@
     border: none;
     border-radius: 40px;
     background-color: #f8f8fa;
+    font-family: inherit;
+    color: #1d1d1d;
 
     &--message {
       height: 148px;
@@ -48,6 +50,15 @@
       line-height: 20px;
       letter-spacing: 0;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      box-shadow: 0 0 0 1000px #f8f8fa inset;
+      -webkit-text-fill-color: currentColor;
+      transition: background-color 5000s ease-in-out 0s;
+    }
   }
 
   &__button {
@@ -59,12 +70,16 @@
     background-color: #fff;
     cursor: pointer;
 
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0;
     text-align: center;
+    color: #1d1d1d;
     margin-bottom: 48px;
+
+    @include hover(opacity, 0.7);
 
     @include on-tablet {
       margin-bottom: 0;
@@ -116,5 +131,9 @@
     letter-spacing: 0;
     color: $main-text-color;
     text-decoration: none;
+  }
+
+  &__info-link {
+    @include hover(opacity, 0.7);
   }
 }

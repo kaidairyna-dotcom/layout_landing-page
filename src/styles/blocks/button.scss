@@ -12,6 +12,8 @@
   border-radius: 40px;
   background-color: #fff;
 
+  @include hover(opacity, 0.7);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 27px;
